@@ -8,7 +8,7 @@ And load balancer
 
 ------------------------
 
-commands that you will need to run the code and create the structure as shown in the picture. (it is important that you initially created an authorization for an AZURA account on your computer)
+commands that you will need to run the code and create the structure as shown in the picture. (it is important that you initially created an authorization for an AZURE account on your computer)
 terraform init
 terraform validate
 terraform apply
