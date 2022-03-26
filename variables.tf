@@ -23,12 +23,23 @@ variable "vnet" {
 
 variable "username" {
   type        = string
-  default    = "artemrafikov"
+  default    = 
 
 }
 variable "password" {
   type        = string
-  default    = "0542877567A!"
+  default    = 
+
+}
+
+variable "postgresusername" {
+  type        = string
+  default    = 
+
+}
+variable "postgrespassword" {
+  type        = string
+  default    = 
 
 }
 
