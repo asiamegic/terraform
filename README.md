@@ -9,9 +9,9 @@ And load balancer
 ------------------------
 
 commands that you will need to run the code and create the structure as shown in the picture. (it is important that you initially created an authorization for an AZURE account on your computer)
-terraform init
-terraform validate
-terraform apply
+* terraform init
+* terraform validate
+* terraform apply
 
 
 main file - contains basic infrastructure creation configurations.
@@ -38,7 +38,6 @@ PGPASSWORD=password__database
 PGPORT=5432
 
 
-# Okta configuration
 OKTA_ORG_URL=https://"your_id_dev".okta.com
 OKTA_CLIENT_ID=your_id
 OKTA_CLIENT_SECRET=your_decret
