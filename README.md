@@ -19,7 +19,7 @@ main file - contains basic infrastructure creation configurations.
 var file - contains variables as well as access passwords.
 
 
-install file - contains the command to install the scale application on the server, including autoloading the javascript application. To install, you need to run the bash install command. at the stage of opening a text editor, you need to insert the local IP configurations, postgres database data, as well as information from the octa account.after saving the configuration, the installation will continue and end at the autoran setup stage
+install file - contains the command to install the scale application on the server, including autoloading the javascript application. To install, you need to run the bash install command. at the stage of opening a text editor, you need to insert the local IP configurations, postgres database data, as well as information from the octa account.after saving the configuration, the installation will continue and end at the autorun setup stage
 
 
 .env - application configuration file is hidden
@@ -27,7 +27,7 @@ install file - contains the command to install the scale application on the serv
 PORT=8080
 HOST=0.0.0.0
 
-HOST_URL=http://your_public)ip:8080
+HOST_URL=http://your_public_ip:8080
 COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
 NODE_ENV=development
 
