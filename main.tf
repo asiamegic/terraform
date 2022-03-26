@@ -202,8 +202,9 @@ resource "azurerm_availability_set" "avset" {
 #  resource_group_name             = azurerm_resource_group.rg.name
 #  location                        = var.location
 #  size                            = "Standard_b1s"
-#  admin_username                  = var.username
-#  admin_password                  = "0542877567A!"
+#  admin_
+name                  = var.username
+#  admin_password                  = var.password
 #  availability_set_id             = azurerm_availability_set.avset.id
 #  disable_password_authentication = false
 #  network_interface_ids           = [
@@ -227,8 +228,8 @@ resource "azurerm_availability_set" "avset" {
 ##====================
 resource "azurerm_linux_virtual_machine_scale_set" "scale_machine" {
   name                = "scale-machine"
-  admin_username      = "artemrafikov"
-  admin_password      = "0542877567A!"
+  admin_username      = var.username
+  admin_password      = var.password
   instances           = 2
   location            = var.location
   resource_group_name = var.resource_group_name
@@ -331,8 +332,8 @@ resource "azurerm_monitor_autoscale_setting" "autoscale_setting" {
 #  resource_group_name             = var..resource_group_name
 #  location                        = var.location
 #  size                            = "Standard_b1s"
-#  admin_username                  = "artemrafikov"
-#  admin_password                  = "0542877567A!"
+#  admin_username                  = var.username
+#  admin_password                  = var.password
 #  availability_set_id             = azurerm_availability_set.avset.id
 #  disable_password_authentication = false
 #  network_interface_ids = [
@@ -363,8 +364,8 @@ resource "azurerm_postgresql_server" "postgres" {
   storage_mb                   = 5120
   backup_retention_days        = 7
   geo_redundant_backup_enabled = false
-  administrator_login          = "psqladmin"
-  administrator_login_password = "H@Sh1CoR3!"
+  administrator_login          = var.postgresusername
+  administrator_login_password = var.postgrespassword
   version                      = "9.5"
   ssl_enforcement_enabled      = false
   depends_on                      = [azurerm_resource_group.rg]
