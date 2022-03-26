@@ -203,7 +203,7 @@ resource "azurerm_availability_set" "avset" {
 #  location                        = var.location
 #  size                            = "Standard_b1s"
 #  admin_
-name                  = var.username
+#  name                  = var.username
 #  admin_password                  = var.password
 #  availability_set_id             = azurerm_availability_set.avset.id
 #  disable_password_authentication = false
